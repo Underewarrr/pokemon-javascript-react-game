@@ -1,4 +1,6 @@
 import Canvas from './components/Canvas';
+import './App.css'
+
 const draw = context => {
 
   // Insert your canvas API code to draw an image

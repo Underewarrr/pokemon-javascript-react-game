@@ -4,8 +4,8 @@ const Canvas = ({draw, height, width}) => {
   const canvas = React.useRef();
   React.useEffect(() => {
     const ctx = canvas.current.getContext('2d');
-    ctx.fillStyle = 'white'
-    ctx.fillRect(0, 0, canvas.width, canvas.height) // fill the canvas with black color
+    ctx.fillRect(0, 0, width, height) // fill the canvas with black color
+    ctx.fillStyle = 'white';
     draw(ctx);
     console.log(ctx)
 
