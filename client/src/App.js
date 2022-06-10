@@ -1,22 +1,11 @@
-import './App.css'
+import Canvas from './components/Canvas';
+const draw = context => {
 
+  // Insert your canvas API code to draw an image
+};
 function App() {
-  const canvas = document.querySelector('canvas')
-
-  const ctx = canvas.getContext('2d') // 2d is for drawing
-
-  canvas.width = 1024
-  canvas.height = 576 
-
-  ctx.fillStyle = 'white'
-  ctx.fillRect(0, 0, canvas.width, canvas.height) // fill the canvas with black color
-
-  console.log(canvas)  
   return (
-    <>
-      <canvas></canvas>
-    </>
+    <Canvas draw={draw} height={576} width={1024} />
   );
 }
-
 export default App;
