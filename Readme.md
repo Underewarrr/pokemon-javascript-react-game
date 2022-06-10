@@ -13,7 +13,7 @@ _in order to help you to run or fork this project that steps i followed in dev s
 - [x] Foreground Layers
 - [x] Export Layer for Project Import
 ## Player And Map Dev
-- [ ] Project Setup
+- [x] Project Setup
 - [ ] Import and render Map
 - [ ] Player creation
 - [ ] Move player in map with KeyDowns
