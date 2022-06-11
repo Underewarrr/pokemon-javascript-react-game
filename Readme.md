@@ -17,8 +17,8 @@ _in order to help you to run or fork this project that steps i followed in dev s
 - [x] Foreground Layers
 - [x] Export Layer for Project Import
 ## Player And Map Dev
-- [x] Project Setup
-- [x] Import and render Map
+- [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
+- [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7)
 - [ ] Player creation
 - [ ] Move player in map with KeyDowns
 - [ ] Player-to-map-bondaries (Colision)
