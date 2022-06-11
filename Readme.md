@@ -14,7 +14,7 @@ _in order to help you to run or fork this project that steps i followed in dev s
 - [x] Export Layer for Project Import
 ## Player And Map Dev
 - [x] Project Setup
-- [ ] Import and render Map
+- [x] Import and render Map
 - [ ] Player creation
 - [ ] Move player in map with KeyDowns
 - [ ] Player-to-map-bondaries (Colision)
