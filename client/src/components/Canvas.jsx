@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+var centerX = 0;
+var centerY = 0;
 const Canvas = ({draw, height, width}) => {
   const canvas = React.useRef();
   React.useEffect(() => {
@@ -7,8 +9,8 @@ const Canvas = ({draw, height, width}) => {
   // const ctx = this.refs.canvas.getContext('2d');
   const canvasAct = document.querySelector('canvas')
     ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, width, height) // fill the canvas with black color
-    ctx.drawImage(canvasAct, 0, 0, width, height)
+    ctx.fillRect(centerX, centerY, width, height) // fill the canvas with black color
+    ctx.drawImage(canvasAct, centerX, centerY, width, height)
   const gameScene = new Image();
     gameScene.src =
       "https://i.imgur.com/rkxlut8.png";
@@ -19,8 +21,8 @@ const Canvas = ({draw, height, width}) => {
     ctx.drawImage(gameScene, 0, 0, width, height);
     ctx.drawImage(playerImage,
       // START CROPPING SPRITE HERE
-      0, // X Coordinates
-      0, // Y Coordinates
+      centerX, // X Coordinates
+      centerY, // Y Coordinates
       playerImage.width / 4, // Width of the image
       playerImage.height, // Height
       // ACTUAL SPRITE SIZE
