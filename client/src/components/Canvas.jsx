@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 var centerX = 0;
 var centerY = 0;
+
+
+
 const Canvas = ({draw, height, width}) => {
+  
   const canvas = React.useRef();
   React.useEffect(() => {
     const ctx = canvas.current.getContext('2d');
@@ -19,24 +23,48 @@ const Canvas = ({draw, height, width}) => {
       playerImage.src =
       "https://i.imgur.com/z7zrjm4.png";
 
-    gameScene.onload = () => {
-      ctx.drawImage(gameScene, 0, 0, width, height);
-      ctx.drawImage(playerImage,
-      // START CROPPING SPRITE HERE
-      centerX, 
-      centerY, 
-      playerImage.width / 4,
-      playerImage.height,
-      // ACTUAL SPRITE SIZE
-      width / 2 - (playerImage.width / 4) / 2, // Divide a sprite into 4 parts and take the middle one
-      height / 2 - playerImage.height / 2,
-      playerImage.width / 4, 
-      playerImage.height,
-      // END CROPPING SPRITE HERE
-      );
-    };
   draw(ctx);
+
+class Sprite {
+  constructor({ position, velocity, image }) {
+    this.position = position
+    this.image = image
+  }
+  draw(){
+    ctx.drawImage(this.image, centerX, centerY, width, height);
+  }
+}
+  const gameSceneLayer = new Sprite({
+    position: { 
+      x: centerX,
+      y: centerY
+    },
+    image: gameScene
+  })
+
+  function animate() {
+    window.requestAnimationFrame(animate);
+    gameSceneLayer.draw()
+    ctx.drawImage(playerImage,
+    // START CROPPING SPRITE HERE
+    centerX, 
+    centerY, 
+    playerImage.width / 4,
+    playerImage.height,
+    // ACTUAL SPRITE SIZE
+    width / 2 - (playerImage.width / 4) / 2, // Divide a sprite into 4 parts and take the middle one
+    height / 2 - playerImage.height / 2,
+    playerImage.width / 4, 
+    playerImage.height,
+    // END CROPPING SPRITE HERE
+    );
+    console.log('animation');
+    
+  }
+  animate();
 }, [draw, height, width]);
+// Creating an Infinite Loop
+
 
 // Walk 
 window.addEventListener('keydown', (playerWalk) => {
