@@ -73,10 +73,8 @@ class Sprite {
     playerImage.height,
     // END CROPPING SPRITE HERE
     );   
-    
-    if(keys.ArrowUp.pressed) {
-      console.log('Andou para baixo')
-    }
+        if (keys.ArrowUp.pressed) {
+        }
   }
   
   animate();
@@ -85,28 +83,32 @@ class Sprite {
 
 // Walk 
 
-window.addEventListener('keydown', (event) => {
-  const { key } = event;
+window.addEventListener('keydown', (playerWalk) => {
+  const { key } = playerWalk;
   switch (key) {
     case 'ArrowUp':
       setKeys({ ...keys, ArrowUp: { pressed: true }})
+      console.log('ArrowUp - true')
     break
     case 'ArrowDown':
       setKeys({ ...keys, ArrowDown: { pressed: true }})
+      console.log('ArrowDown - true')
     break
     case 'ArrowLeft':
       setKeys({ ...keys, ArrowLeft: { pressed: true }})
+      console.log('ArrowLeft - true')
     break
     case 'ArrowRight':
       setKeys({ ...keys, ArrowRight: { pressed: true }})
+      console.log('ArrowRight - true')
     break
     default:
     break
   }
 })
 
-window.addEventListener('keyup', (event) => {
-  const { key } = event;
+window.addEventListener('keyup', (playerWalk) => {
+  const { key } = playerWalk;
   switch (key) {
     case 'ArrowUp':
       setKeys({ ...keys, ArrowUp: { pressed: false }})
