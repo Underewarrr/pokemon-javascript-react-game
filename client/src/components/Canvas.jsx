@@ -24,7 +24,6 @@ const Canvas = ({draw, height, width}) => {
       "https://i.imgur.com/z7zrjm4.png";
 
   draw(ctx);
-
 class Sprite {
   constructor({ position, velocity, image }) {
     this.position = position
@@ -58,34 +57,81 @@ class Sprite {
     playerImage.height,
     // END CROPPING SPRITE HERE
     );
-    console.log('animation');
-    
+    const keys = {
+      ArrowUp: {
+        pressed: false,
+      },
+      ArrowDown: {
+        pressed: false,
+      },
+      ArrowLeft: {
+        pressed: false,
+      },
+      ArrowRight: {
+        pressed: false,
+      },
+    }
+    if (keys) {
+      console.log('animation');
+    }
   }
+  
   animate();
 }, [draw, height, width]);
 // Creating an Infinite Loop
-
+const keys = {
+  ArrowUp: {
+    pressed: false,
+  },
+  ArrowDown: {
+    pressed: false,
+  },
+  ArrowLeft: {
+    pressed: false,
+  },
+  ArrowRight: {
+    pressed: false,
+  },
+}
 
 // Walk 
+
 window.addEventListener('keydown', (playerWalk) => {
   switch (playerWalk.key) {
     case 'ArrowUp':
-      console.log('ArrowUp')
+      keys.ArrowUp.pressed = true;
     break
     case 'ArrowDown':
-      console.log('ArrowDown')
+      keys.ArrowDown.pressed = true;
     break
     case 'ArrowLeft':
-      console.log('ArrowLeft')
+      keys.ArrowLeft.pressed = true;
     break
     case 'ArrowRight':
-      console.log('ArrowRight')
+      keys.ArrowRight.pressed = true;
     break
     default:
     break
   }
 })
-
+window.addEventListener('keyup', (playerWalk) => {
+  switch (playerWalk.key) {
+    case 'ArrowUp':
+      keys.ArrowUp.pressed = false;
+    break
+    case 'ArrowDown':
+      keys.ArrowDown.pressed = false;
+    break
+    case 'ArrowLeft':
+      keys.ArrowLeft.pressed = false;
+    break
+    case 'ArrowRight':
+      keys.ArrowRight.pressed = false;
+    break
+    default:
+    break
+  }
+})
 return (
     <canvas ref={canvas} height={height} width={width} />
   );
