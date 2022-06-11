@@ -17,9 +17,19 @@ const Canvas = ({draw, height, width}) => {
     "https://i.imgur.com/z7zrjm4.png";
     gameScene.onload = () => {
     ctx.drawImage(gameScene, 0, 0, width, height);
-    ctx.drawImage(playerImage, 
+    ctx.drawImage(playerImage,
+      // START CROPPING SPRITE HERE
+      0, // X Coordinates
+      0, // Y Coordinates
+      playerImage.width / 4, // Width of the image
+      playerImage.height, // Height
+      // ACTUAL SPRITE SIZE
       width / 2 - playerImage.width / 2, 
-      height / 2 - playerImage.height / 2,);
+      height / 2 - playerImage.height / 2,
+      playerImage.width / 4, // Width of the image
+      playerImage.height, // Height
+      // END CROPPING SPRITE HERE
+      );
     };
   draw(ctx);
 }, [draw, height, width]);
