@@ -24,6 +24,7 @@ const Canvas = ({draw, height, width}) => {
       "https://i.imgur.com/z7zrjm4.png";
 
   draw(ctx);
+
 class Sprite {
   constructor({ position, velocity, image }) {
     this.position = position
@@ -56,45 +57,21 @@ class Sprite {
     playerImage.width / 4, 
     playerImage.height,
     // END CROPPING SPRITE HERE
-    );
-    const keys = {
-      ArrowUp: {
-        pressed: false,
-      },
-      ArrowDown: {
-        pressed: false,
-      },
-      ArrowLeft: {
-        pressed: false,
-      },
-      ArrowRight: {
-        pressed: false,
-      },
-    }
-    if (keys) {
-      console.log('animation');
-    }
+    );   
+    
+    if(keys.ArrowDown) {
+      console.log('Andou para baixo')
+    } 
   }
   
   animate();
 }, [draw, height, width]);
 // Creating an Infinite Loop
-const keys = {
-  ArrowUp: {
-    pressed: false,
-  },
-  ArrowDown: {
-    pressed: false,
-  },
-  ArrowLeft: {
-    pressed: false,
-  },
-  ArrowRight: {
-    pressed: false,
-  },
-}
+
 
 // Walk 
+
+
 
 window.addEventListener('keydown', (playerWalk) => {
   switch (playerWalk.key) {
