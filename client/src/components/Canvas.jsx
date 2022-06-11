@@ -6,26 +6,23 @@ const Canvas = ({draw, height, width}) => {
   const ctx = canvas.current.getContext('2d');
   // const ctx = this.refs.canvas.getContext('2d');
   const canvasAct = document.querySelector('canvas')
-
     ctx.fillStyle = 'white';
     ctx.fillRect(0, 0, width, height) // fill the canvas with black color
     ctx.drawImage(canvasAct, 0, 0, width, height)
-    const gameScene = new Image();
+  const gameScene = new Image();
     gameScene.src =
       "https://i.imgur.com/rkxlut8.png";
-    const playerImage = new Image()
+  const playerImage = new Image()
     playerImage.src =
     "https://i.imgur.com/z7zrjm4.png";
     gameScene.onload = () => {
-      ctx.drawImage(gameScene, 0, 0, width, height);
-      ctx.drawImage(playerImage, 
-        width / 2 - playerImage.width / 2, 
-        height / 2 - playerImage.height / 2,);
+    ctx.drawImage(gameScene, 0, 0, width, height);
+    ctx.drawImage(playerImage, 
+      width / 2 - playerImage.width / 2, 
+      height / 2 - playerImage.height / 2,);
     };
-    
-     draw(ctx);
-
-  }, [draw, height, width]);
+  draw(ctx);
+}, [draw, height, width]);
 
 return (
     <canvas ref={canvas} height={height} width={width} />
