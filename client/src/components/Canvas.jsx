@@ -4,8 +4,6 @@ import { useState } from 'react';
 var centerX = 0;
 var centerY = 0;
 
-
-
 const Canvas = ({draw, height, width}) => {
   const [keys, setKeys] = useState({
     ArrowUp: {
