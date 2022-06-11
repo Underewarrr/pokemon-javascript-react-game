@@ -10,22 +10,19 @@ const Canvas = ({draw, height, width}) => {
     ctx.fillStyle = 'white';
     ctx.fillRect(0, 0, width, height) // fill the canvas with black color
     ctx.drawImage(canvasAct, 0, 0, width, height)
-    const image = new Image();
-    image.src =
+    const gameScene = new Image();
+    gameScene.src =
       "https://i.imgur.com/rkxlut8.png";
-    image.onload = () => {
-      ctx.drawImage(image, 0, 0, width, height);
+    const playerImage = new Image()
+    playerImage.src =
+    "https://i.imgur.com/z7zrjm4.png";
+    gameScene.onload = () => {
+      ctx.drawImage(gameScene, 0, 0, width, height);
       ctx.drawImage(playerImage, 
         width / 2 - playerImage.width / 2, 
         height / 2 - playerImage.height / 2,);
     };
     
-    const playerImage = new Image()
-    playerImage.src =
-    "https://i.imgur.com/z7zrjm4.png";
-
-    playerImage.onload = () => {
-    };
      draw(ctx);
 
   }, [draw, height, width]);
