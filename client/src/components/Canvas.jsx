@@ -24,7 +24,7 @@ const Canvas = ({draw, height, width}) => {
       playerImage.width / 4, // Width of the image
       playerImage.height, // Height
       // ACTUAL SPRITE SIZE
-      width / 2 - playerImage.width / 2, 
+      width / 2 - (playerImage.width / 4) / 2, // Divide a sprite into 4 parts and take the middle one
       height / 2 - playerImage.height / 2,
       playerImage.width / 4, // Width of the image
       playerImage.height, // Height
