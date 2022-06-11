@@ -3,7 +3,7 @@ I got this ideia from Chris in video listed below and implemented for react with
 ## Project Management Helper
 ### To run and test 
 _Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
-# Want developer from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
+# Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
 _in order to help you to run or fork this project that steps i followed in dev stages._
 ## Map Creation (Tiled Map Editor)
 **Download And Setup**
