@@ -17,6 +17,7 @@ _in order to help you to run or fork this project that steps i followed in dev s
 - [x] Foreground Layers
 - [x] Export Layer for Project Import
 ## Player And Map Dev
+_Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-game/pulls?q=is%3Apr+is%3Aclosed)_
 - [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
 - [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7)
 - [x] [Player creation](https://github.com/openfordevs/pokemon-javascript-react-game/pull/9)
