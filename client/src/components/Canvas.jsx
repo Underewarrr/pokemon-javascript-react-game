@@ -12,9 +12,9 @@ const Canvas = ({draw, height, width}) => {
     ctx.drawImage(canvasAct, 0, 0, width, height)
     const image = new Image();
     image.src =
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png";
+      "https://i.imgur.com/rkxlut8.png";
     image.onload = () => {
-      ctx.drawImage(image, 0, 0, height, width);
+      ctx.drawImage(image, 0, 0, width, height);
     };
   
 
