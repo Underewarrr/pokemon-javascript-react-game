@@ -20,7 +20,7 @@ _in order to help you to run or fork this project that steps i followed in dev s
 - [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
 - [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7)
 - [x] [Player creation](https://github.com/openfordevs/pokemon-javascript-react-game/pull/9)
-- [ ] [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/11)
+- [x] [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/11)
 - [ ] Player-to-map-bondaries (Colision)
 - [ ] Foreground Objects
 - [ ] Player Movement animation
