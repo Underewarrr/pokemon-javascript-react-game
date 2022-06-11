@@ -16,8 +16,14 @@ const Canvas = ({draw, height, width}) => {
     image.onload = () => {
       ctx.drawImage(image, 0, 0, width, height);
     };
-  
+    
+    const playerImage = new Image()
+    playerImage.src =
+    "https://i.imgur.com/z7zrjm4.png";
 
+    playerImage.onload = () => {
+      ctx.drawImage(playerImage, 0, 0);
+    };
      draw(ctx);
 
   }, [draw, height, width]);
