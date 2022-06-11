@@ -15,6 +15,7 @@ const Canvas = ({draw, height, width}) => {
       "https://i.imgur.com/rkxlut8.png";
     image.onload = () => {
       ctx.drawImage(image, 0, 0, width, height);
+      ctx.drawImage(playerImage, width / 2 - playerImage.width / 2, height / 2);
     };
     
     const playerImage = new Image()
@@ -22,7 +23,6 @@ const Canvas = ({draw, height, width}) => {
     "https://i.imgur.com/z7zrjm4.png";
 
     playerImage.onload = () => {
-      ctx.drawImage(playerImage, 0, 0);
     };
      draw(ctx);
 
