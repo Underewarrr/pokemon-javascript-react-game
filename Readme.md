@@ -1,6 +1,8 @@
 # Pokemon JavaScript Game
 I got this ideia from Chris in video listed below and implemented for react with hooks!
 ## Project Management Helper
+### Designer Patterns
+- [ ] [Observer]() for [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/11)
 ### To run and test 
 _Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
 # Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
