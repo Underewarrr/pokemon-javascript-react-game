@@ -1,25 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 var centerX = 0;
 var centerY = 0;
 
 const Canvas = ({draw, height, width}) => {
-  const [keys, setKeys] = useState({
-    ArrowUp: {
-      pressed: false,
-    },
-    ArrowDown: {
-      pressed: false,
-    },
-    ArrowRight: {
-      pressed: false,
-    },
-    ArrowLeft: {
-      pressed: false,
-    }
-  })
-
+  
   const canvas = React.useRef();
   React.useEffect(() => {
     const ctx = canvas.current.getContext('2d');
@@ -72,51 +57,51 @@ class Sprite {
     // END CROPPING SPRITE HERE
     );   
     
-    if(keys.ArrowUp.pressed) {
+    if(keys.ArrowDown) {
       console.log('Andou para baixo')
-    }
+    } 
   }
   
   animate();
-}, [draw, height, width, keys]);
+}, [draw, height, width]);
 // Creating an Infinite Loop
+
 
 // Walk 
 
-window.addEventListener('keydown', (event) => {
-  const { key } = event;
-  switch (key) {
+
+
+window.addEventListener('keydown', (playerWalk) => {
+  switch (playerWalk.key) {
     case 'ArrowUp':
-      setKeys({ ...keys, ArrowUp: { pressed: true }})
+      keys.ArrowUp.pressed = true;
     break
     case 'ArrowDown':
-      setKeys({ ...keys, ArrowDown: { pressed: true }})
+      keys.ArrowDown.pressed = true;
     break
     case 'ArrowLeft':
-      setKeys({ ...keys, ArrowLeft: { pressed: true }})
+      keys.ArrowLeft.pressed = true;
     break
     case 'ArrowRight':
-      setKeys({ ...keys, ArrowRight: { pressed: true }})
+      keys.ArrowRight.pressed = true;
     break
     default:
     break
   }
 })
-
-window.addEventListener('keyup', (event) => {
-  const { key } = event;
-  switch (key) {
+window.addEventListener('keyup', (playerWalk) => {
+  switch (playerWalk.key) {
     case 'ArrowUp':
-      setKeys({ ...keys, ArrowUp: { pressed: false }})
+      keys.ArrowUp.pressed = false;
     break
     case 'ArrowDown':
-      setKeys({ ...keys, ArrowDown: { pressed: false }})
+      keys.ArrowDown.pressed = false;
     break
     case 'ArrowLeft':
-      setKeys({ ...keys, ArrowLeft: { pressed: false }})
+      keys.ArrowLeft.pressed = false;
     break
     case 'ArrowRight':
-      setKeys({ ...keys, ArrowRight: { pressed: false }})
+      keys.ArrowRight.pressed = false;
     break
     default:
     break
