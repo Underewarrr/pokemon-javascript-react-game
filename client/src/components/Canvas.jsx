@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 var centerX = 0;
 var centerY = 0;
 var spriteSize = 4;
@@ -68,7 +67,7 @@ document.addEventListener('keyup', function(playerWalk) {
 });
 
 const Canvas = ({draw, height, width}) => {  
-const canvas = React.useRef();
+const canvas = React.useRef();  
   React.useEffect(() => {
     const ctx = canvas.current.getContext('2d');
     const playerImage = new Image()
