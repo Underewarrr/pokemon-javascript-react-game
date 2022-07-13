@@ -1,4 +1,4 @@
-# Pokemon JavaScript Game
+# Pokemon React Game
 I got this ideia from Chris in video listed below and implemented for react with hooks!
 ## Project Management Helper
 ### Designer Patterns for future!
