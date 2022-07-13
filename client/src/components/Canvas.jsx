@@ -110,8 +110,17 @@ function animate() {
     playerImage.height,
     // END CROPPING SPRITE HERE
     );   
+    if (keys.ArrowDown.pressed) {
+      gameSceneLayer.position.y = gameSceneLayer.position.y - 3;  // Move Down
+    }
     if (keys.ArrowUp.pressed) {
-      gameSceneLayer.position.y = gameSceneLayer.position.y - 3;
+      gameSceneLayer.position.y = gameSceneLayer.position.y + 3;  // Move Up
+    }
+    if (keys.ArrowRight.pressed) {
+      gameSceneLayer.position.x = gameSceneLayer.position.x - 3;  // Move Left
+    }
+    if (keys.ArrowLeft.pressed) {
+      gameSceneLayer.position.x = gameSceneLayer.position.x + 3;  // Move Right
     }
   }
   animate();
