@@ -112,13 +112,13 @@ function animate() {
     if (keys.ArrowDown.pressed) {
       gameSceneLayer.position.y = gameSceneLayer.position.y - 3;  // Move Down
     }
-    if (keys.ArrowUp.pressed) {
+    else if (keys.ArrowUp.pressed) {
       gameSceneLayer.position.y = gameSceneLayer.position.y + 3;  // Move Up
     }
-    if (keys.ArrowRight.pressed) {
+    else if (keys.ArrowRight.pressed) {
       gameSceneLayer.position.x = gameSceneLayer.position.x - 3;  // Move Left
     }
-    if (keys.ArrowLeft.pressed) {
+    else if (keys.ArrowLeft.pressed) {
       gameSceneLayer.position.x = gameSceneLayer.position.x + 3;  // Move Right
     }
   }
