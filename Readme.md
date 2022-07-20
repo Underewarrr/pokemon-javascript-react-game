@@ -7,6 +7,7 @@ I got this ideia from Chris in video listed below and implemented for react with
 _Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
 # Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
 _in order to help you to run or fork this project that steps i followed in dev stages._
+## Github [Project](https://github.com/Underewarrr/pokemon-javascript-react-game/projects/1)
 ## Map Creation (Tiled Map Editor)
 **Download And Setup**
 - [x] Download Tiled
