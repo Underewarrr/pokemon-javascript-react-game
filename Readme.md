@@ -1,4 +1,7 @@
 # Pokemon React Game
+
+![Git Hub Repo Size](https://img.shields.io/github/repo-size/underewarrr/pokemon-javascript-react-game)<br>
+
 I got this ideia from Chris in video listed below and implemented for react with hooks!
 ## Project Management Helper
 ### Designer Patterns for future!
