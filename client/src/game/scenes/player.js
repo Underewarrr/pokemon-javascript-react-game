@@ -19,4 +19,7 @@ export const drawPlayer = (ctx, playerImageRef, playerSize, playerPosition) => {
       spriteHeight
     );
   };
+
+  export const playerImgUrl = 'https://i.imgur.com/z7zrjm4.png'
+
   

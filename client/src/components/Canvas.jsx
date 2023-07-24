@@ -2,15 +2,14 @@ import React, { useEffect, useRef, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { updatePlayerPosition } from '../game/control/player'; 
 import { drawGameWorld } from '../game/scenes/world'; 
-import { drawPlayer } from '../game/scenes/player'; 
+import { drawPlayer, playerImgUrl } from '../game/scenes/player'; 
 import { animate } from '../game/animations/animate'; // Import the animate function from the external file
 
 
 const Canvas = ({ draw, height, width, spriteSize = 4, spriteMiddle = 2 }) => {
   const canvasRef = useRef();
   const playerImageRef = useRef(new Image());
-  playerImageRef.current.src = 'https://i.imgur.com/z7zrjm4.png';
-
+  playerImageRef.current.src = playerImgUrl;
   const playerPosition = useMemo(() => ({ x: width / 2, y: height / 2 }), [height, width]); // Initial player position
 
   useEffect(() => {
