@@ -25,10 +25,11 @@ _in order to help you to run or fork this project that steps i followed in dev s
 ## Player And Map Dev
 _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-game/pulls?q=is%3Apr+is%3Aclosed)_
 - [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
-- [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7)
+- [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7) 
+  - This system has been improved! [Check here](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
 - [x] [Player creation](https://github.com/openfordevs/pokemon-javascript-react-game/pull/9)
 - [x] [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/18)
-- [ ] Player-to-map-bondaries (Colision)
+- [x] [Player-to-map-bondaries (Colision)](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/23)
 - [ ] Foreground Objects
 - [ ] Player Movement animation
 ## Battle Sequence
@@ -36,7 +37,8 @@ _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-ga
 - [ ] Transiction from map to battle sequences
 - [ ] DrawBattle Background
 - [ ] Add Battle Sprites
-
+## Enchances
+- [x] [Dynamic Tite Render](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
 # Tools
 ## Map Editor
 _[Tiled](https://www.mapeditor.org) are an TileMap creator. Avaliable for all OS. Use Tiled to create, generate and export map assets._
