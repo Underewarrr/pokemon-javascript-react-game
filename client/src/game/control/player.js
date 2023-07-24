@@ -1,18 +1,36 @@
 import {  useMemo } from 'react';
 
-export const updatePlayerPosition = (playerPosition, keys) => {
+import { TILE_TYPES } from '../items/tiles/types'; // Import the TILE_TYPES object
+
+export const updatePlayerPosition = (playerPosition, keys, tileMap) => {
   const playerSpeed = 3;
+  const { x, y } = playerPosition;
+
+  // Calculate the next position based on the key inputs
+  let nextX = x;
+  let nextY = y;
   if (keys.ArrowUp.pressed) {
-    playerPosition.y -= playerSpeed;
+    nextY -= playerSpeed;
   }
   if (keys.ArrowDown.pressed) {
-    playerPosition.y += playerSpeed;
+    nextY += playerSpeed;
   }
   if (keys.ArrowLeft.pressed) {
-    playerPosition.x -= playerSpeed;
+    nextX -= playerSpeed;
   }
   if (keys.ArrowRight.pressed) {
-    playerPosition.x += playerSpeed;
+    nextX += playerSpeed;
+  }
+
+  // Check for collisions with tiles that cannot be walked on
+  const playerTileX = Math.floor(nextX / 64); // Assuming each tile is 64x64 pixels
+  const playerTileY = Math.floor(nextY / 64); // Assuming each tile is 64x64 pixels
+  const nextTileType = tileMap[playerTileY][playerTileX];
+
+  if (TILE_TYPES[nextTileType].canWalk) {
+    // Update the player position if the next tile can be walked on
+    playerPosition.x = nextX;
+    playerPosition.y = nextY;
   }
 };
 
