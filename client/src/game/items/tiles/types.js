@@ -9,26 +9,33 @@ export const TILE_TYPES = {
   GRASS: {
     id: 1,
     name: 'Grass',
-    color: 'green'
+    color: 'green',
+    canWalk: true,
   },
   WATER: {
     id: 2,
     name: 'Water',
-    color: 'blue'
+    color: 'blue',
+    canWalk: false,
+
   },
   ROCK: {
     id: 3,
     name: 'Rock',
-    color: 'grey'
+    color: 'grey',
+    canWalk: false,
+    
   },
   SAND: {
     id: 4,
     name: 'Sand',
-    color: 'yellow'
+    color: 'yellow',
+    canWalk: true,
   },
   WOOD: {
     id: 5,
     name: 'Wooden',
-    color: 'brown'
+    color: 'brown',
+    canWalk: true,
   },
 };

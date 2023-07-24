@@ -31,8 +31,19 @@ const Canvas = ({ draw, height, width, spriteSize = 4, spriteMiddle = 2 }) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    const cleanup = animate(ctx, () => drawGameWorld(ctx, width, height, initialTileMap), updatePlayerPosition, drawPlayer, width, height, playerPosition, playerImageRef, spriteSize);
-    return () => {
+    const cleanup = animate(
+      ctx,
+      () => drawGameWorld(ctx, width, height, initialTileMap), // Pass the tile map data here
+      (playerPosition, keys) => updatePlayerPosition(playerPosition, keys, initialTileMap), // Pass the tile map data here
+      drawPlayer,
+      width,
+      height,
+      playerPosition,
+      playerImageRef,
+      spriteSize
+      );
+    
+      return () => {
       cleanup();
     };
   }, [draw, height, width, playerPosition, playerImageRef, spriteSize, initialTileMap]);
