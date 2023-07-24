@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Pokemon React Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Git Hub Repo Size](https://img.shields.io/github/repo-size/underewarrr/pokemon-javascript-react-game)<br>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I got this ideia from Chris in video listed below and implemented for react with hooks!
+## Project Management Helper
+### Designer Patterns for future!
+- [ ] [Observer](https://refactoring.guru/pt-br/design-patterns/observer) for [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/18)
+### To run and test 
+_Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
+# Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
+_in order to help you to run or fork this project that steps i followed in dev stages._
+## Github [Project](https://github.com/Underewarrr/pokemon-javascript-react-game/projects/1)
+## Map Creation (Tiled Map Editor)
+**Download And Setup**
+- [x] Download Tiled
+- [x] Import to project 
+## Tile Editor
+- [x] Tile Layering for Ocean and Landmasses
+- [x] Layering and placment of Trees
+- [x] LandScape Details
+- [x] Colision and Map bondaries
+- [x] Foreground Layers
+- [x] Export Layer for Project Import
+## Player And Map Dev
+_Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-game/pulls?q=is%3Apr+is%3Aclosed)_
+- [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
+- [x] [Import and render Map](https://github.com/openfordevs/pokemon-javascript-react-game/pull/7) 
+  - This system has been improved! [Check here](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
+- [x] [Player creation](https://github.com/openfordevs/pokemon-javascript-react-game/pull/9)
+- [x] [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/18)
+- [x] [Player-to-map-bondaries (Colision)](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/23)
+- [ ] Foreground Objects
+- [ ] Player Movement animation
+## Battle Sequence
+- [ ] Battle Activation
+- [ ] Transiction from map to battle sequences
+- [ ] DrawBattle Background
+- [ ] Add Battle Sprites
+## Enchances
+- [x] [Dynamic Tite Render](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
+# Tools
+## Map Editor
+_[Tiled](https://www.mapeditor.org) are an TileMap creator. Avaliable for all OS. Use Tiled to create, generate and export map assets._
