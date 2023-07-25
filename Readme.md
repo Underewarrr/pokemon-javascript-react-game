@@ -11,17 +11,16 @@ _Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
 # Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
 _in order to help you to run or fork this project that steps i followed in dev stages._
 ## Github [Project](https://github.com/Underewarrr/pokemon-javascript-react-game/projects/1)
-## Map Creation (Tiled Map Editor)
-**Download And Setup**
-- [x] Download Tiled
-- [x] Import to project 
-## Tile Editor
-- [x] Tile Layering for Ocean and Landmasses
-- [x] Layering and placment of Trees
-- [x] LandScape Details
-- [x] Colision and Map bondaries
-- [x] Foreground Layers
-- [x] Export Layer for Project Import
+
+## Map Creation (Web Map Editor)
+
+## Web Tile Editor
+- [x] [Tile Layering for Ocean and Landmasses](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
+- [ ] Layering and placment of Trees
+- [ ] LandScape Details
+- [x] [Colision and Map bondaries](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/23)
+- [ ] Foreground Layers
+- [ ] Export Layer for Project Import
 ## Player And Map Dev
 _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-game/pulls?q=is%3Apr+is%3Aclosed)_
 - [x] [Project Setup](https://github.com/openfordevs/pokemon-javascript-react-game/pull/3)
@@ -38,7 +37,10 @@ _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-ga
 - [ ] DrawBattle Background
 - [ ] Add Battle Sprites
 ## Enchances
-- [x] [Dynamic Tite Render](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
+- [x] [Dynamic Tile Render](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
+- [x] [Better Game Structure](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/21)
 # Tools
 ## Map Editor
+Soon we will be able to use the web tile editor, now map are dynamic created.
+Deprecated
 _[Tiled](https://www.mapeditor.org) are an TileMap creator. Avaliable for all OS. Use Tiled to create, generate and export map assets._
