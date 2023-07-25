@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { updatePlayerPosition } from '../game/control/player';
 import { drawGameWorld } from '../game/scenes/world';
+import { drawPlayer, playerWalkDownImg, playerWalkUpImg, playerWalkLeftImg, playerWalkRightImg } from '../game/scenes/player';
 import { animate } from '../game/animations/animate';
 import { startMap } from '../game/maps/maps';
 
