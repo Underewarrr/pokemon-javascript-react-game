@@ -1,3 +1,9 @@
 body {
     background-color: black;
 }
+
+.chat {
+    position: absolute;
+    background-color: blue;
+    width: 400;
+}
