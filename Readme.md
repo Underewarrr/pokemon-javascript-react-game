@@ -4,8 +4,8 @@
 
 I got this ideia from Chris in video listed below and implemented for react with hooks!
 ## Project Management Helper
-### Designer Patterns for future!
-- [ ] [Observer](https://refactoring.guru/pt-br/design-patterns/observer) for [Move player in map with KeyDowns](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/24)
+### Designer Patterns
+- [x] [Observer](https://refactoring.guru/pt-br/design-patterns/observer) for [Move player in map with KeyDowns](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/24)
 ### To run and test 
 _Clone the repo, `npm install` and `npm start` Have Fun! (Not Yet)_
 # Want develop from scrtach ? Watch this [video!](https://www.youtube.com/watch?v=yP5DKzriqXA)
