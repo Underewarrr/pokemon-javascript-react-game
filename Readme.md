@@ -28,6 +28,7 @@ _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-ga
   - This system has been improved! [Check here](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/22)
 - [x] [Player creation](https://github.com/openfordevs/pokemon-javascript-react-game/pull/9)
 - [x] [Move player in map with KeyDowns](https://github.com/openfordevs/pokemon-javascript-react-game/pull/18)
+  - This system has been improved! [Check here](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/24)
 - [x] [Player-to-map-bondaries (Colision)](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/23)
 - [ ] Foreground Objects
 - [ ] Player Movement animation
