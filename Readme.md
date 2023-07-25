@@ -42,6 +42,6 @@ _Check all PRS [HERE](https://github.com/openfordevs/pokemon-javascript-react-ga
 - [x] [Better Game Structure](https://github.com/Underewarrr/pokemon-javascript-react-game/pull/21)
 # Tools
 ## Map Editor
-Soon we will be able to use the web tile editor, now map are dynamic created.
-Deprecated
+_Soon we will be able to use the web tile editor, now map are dynamic created.
+Deprecated_
 _[Tiled](https://www.mapeditor.org) are an TileMap creator. Avaliable for all OS. Use Tiled to create, generate and export map assets._
